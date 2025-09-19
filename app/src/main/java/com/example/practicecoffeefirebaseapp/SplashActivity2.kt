@@ -1,5 +1,6 @@
 package com.example.practicecoffeefirebaseapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,4 +15,10 @@ class SplashActivity2 : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivitySplash2Binding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.startBtn.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
+    }
 }
