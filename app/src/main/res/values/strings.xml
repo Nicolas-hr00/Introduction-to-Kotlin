@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PracticeCoffeeFirebaseAPp</string>
+    <string name="choice_your_n_favorite_coffee">Choice your \n Favorite Coffee</string>
+    <string name="get_started">Get Started</string>
+</resources>
