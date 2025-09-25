@@ -23,7 +23,8 @@
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/profile" />
+                app:srcCompat="@drawable/profile"
+                />
 
             <TextView
                 android:id="@+id/textView"
@@ -41,7 +42,11 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="12dp"
-                app:srcCompat="@drawable/bell_icon" />
+                android:background="@drawable/brown_full_corner_bg"
+                app:srcCompat="@drawable/bell_icon"
+
+                />
+
         </LinearLayout>
     </ScrollView>
 
