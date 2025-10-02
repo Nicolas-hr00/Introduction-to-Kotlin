@@ -9,13 +9,15 @@
     tools:context=".MainActivity">
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="90dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,15 +68,15 @@
                     android:id="@+id/editTextText"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:background="@drawable/white_full_corner_bg"
                     android:drawableStart="@drawable/search_icon"
                     android:drawablePadding="8dp"
-                    android:padding="8dp"
-                    android:layout_marginEnd="8dp"
                     android:ems="10"
+                    android:hint="@string/search_anything"
                     android:inputType="text"
-                    android:hint="@string/search_anything" />
+                    android:padding="8dp" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -98,11 +100,11 @@
                     android:layout_height="170dp"
                     android:layout_marginHorizontal="16dp"
                     android:scaleType="fitXY"
-                    app:shapeAppearanceOverlay="@style/CircleCornerImageView"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/CircleCornerImageView"
                     tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                 <ProgressBar
@@ -121,17 +123,19 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginTop="16dp"
                 android:text="Category"
                 android:textColor="@color/darkBrown"
-                android:layout_marginVertical="16dp"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"
                 android:textSize="18sp"
+                android:textStyle="bold"
 
                 />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/CategoryView"
                     android:layout_width="match_parent"
@@ -158,10 +162,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
-                    >
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -211,4 +214,54 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/btn_1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
