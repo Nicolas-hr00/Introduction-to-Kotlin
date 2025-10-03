@@ -1,11 +1,9 @@
-package com.example.practicecoffeefirebaseapp
+package com.example.practicecoffeefirebaseapp.Activity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.practicecoffeefirebaseapp.databinding.ActivitySplash2Binding
 
 class SplashActivity2 : AppCompatActivity() {
